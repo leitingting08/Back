@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-int main(void){
+int main(void)
+{
 	double x,y;
-	
+
 	printf("Enter x:");
-	scanf("%f",x);
+	scanf("%lf",&x);
 	if(x!=0){
 		y=1/x;
 	}
@@ -13,4 +14,4 @@ int main(void){
 	}
 	printf("f(%.2f)=%.1f\n",x,y);
 	return 0;
-} 
+}
