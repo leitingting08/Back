@@ -4,7 +4,7 @@ int main(void){
 	int n;
 	double result,x;
 	printf("Enter x,n: ");
-	scanf("%lf%d",&x,&n);
+	scanf("%lf %d",&x,&n);
 	result=mypow(x,n);
 	printf("result=%f\n",result);
 	return 0;
@@ -15,6 +15,6 @@ double mypow(double x,int n){
 	double result;
 	result=1;
 	for(i=1;i<=n;i++)
-		result=result*i;
+		result=result*x;
 	return result;
 }
