@@ -2,16 +2,15 @@ import turtle
 
 def draw_square(angie):
     
-    for i in range(1,10):
-        angie.right(80)
-        angie.forward(100)
-        angie.right(90)
-        angie.forward(100)
-        angie.right(90)
-        angie.forward(100)
-        angie.right(90)
-        angie.forward(100)
-        angie.right(90)
+    for i in range(1,36):
+        angie.right(20)
+        angie.forward(60)
+        angie.right(60)
+        angie.forward(60)
+        angie.right(120)
+        angie.forward(60)
+        angie.right(60)
+
 
 def draw_art():
     window = turtle.Screen()
@@ -19,7 +18,7 @@ def draw_art():
     brad = turtle.Turtle()
     brad.shape("turtle")
     brad.color("yellow")
-    brad.speed(2)
+    brad.speed(5)
     draw_square(brad)
     
 
