@@ -1,15 +1,15 @@
-#include <stdio.h>
-#include <math.h>
-
-int main()
+#include<stdio.h>
+#include<math.h>
+main()
 {
-    int x,y,a,b,c,f;
-    scanf("Input x:%d\n",&x);
-    f = abs(x);
-    a = f/100;
-    b = (f%100)/10;
-    c = (f%100)%10;
-    y = c * 100 + b * 10 + a;
-    printf("y=%d\n",f);
+	int x,a,b,c,y; 
+	printf("Input x:\n" );
+	scanf("%d",&x);            
+	a=fabs(x/100); 
+	if(x>0) b=fabs((x-a*100)/10); 
+	if(x<0) b=fabs(x+a*100)/10; 
+	c=fabs(x%10);                   
+	y=fabs(c*100+b*10+a);                 
+	printf("y=%d\n",y);        
     return 0;
 }
