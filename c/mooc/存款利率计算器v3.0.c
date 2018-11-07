@@ -25,18 +25,13 @@ int main(){
 		case 8:
 		r = 0.0300;
 		break;
-		default: 
-		r = 0;
-		break;
 	}
-	if(r==0){
+	if(n!=1&&n!=2&&n!=3&&n!=5&&n!=8){
 		printf("Error year!");
-	}
-	if(o==89||o==121){
+	}else if(o==89||o==121){
 		d = c*pow((1+r),n);
 		printf("rate = %.4f, deposit = %.4f\n" ,r,d );
-	}
-	if(o==78||o==110){
+	}else if(o==78||o==110){
 		d = c*(1+r*n);
 		printf("rate = %.4f, deposit = %.4f\n" ,r,d );
 	}
