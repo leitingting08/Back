@@ -1,11 +1,17 @@
 #include <stdio.h>
 int main(){
-	int i;
-	for(i=10;i<22;i++){
-		n1 = i*i*i;
-		n2 = n1*i;
-		flag = 1
+	int y,t,i;
+	printf("Input your birth year:");
+	scanf("%d",&y);
+	printf("Input this year:");
+	scanf("%d",&t);
+	int s = 0;
+	for(i=y;i<t+1;i++){
+		if(i%400==0||(i%4==0&&i/100)){
+			printf("%d\n",i);
+			s++;
+		}
 	}
-	printf("age=%d\n",a);
+	printf("count=%d\n",s);
 	return 0;
 }
